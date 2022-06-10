@@ -1,5 +1,6 @@
 :root{
     background-color: grey;
+    font-family: monospace;
 }
 
 body>div{
@@ -13,6 +14,9 @@ body>div{
 .header{
     display: flex;
     justify-content: center;
+    background-color:  #334155;
+    height: 10vh;
+    color: white;
 }
 
 
@@ -26,11 +30,21 @@ body>div{
     flex: 1;
     display: grid;
     grid-template-rows: repeat(4, 1fr) 3fr;
+    background-color: #334155;
+   
 }
 
     .input-col>div{
         border: 1px solid white;
+        background-color: gray;
+        position: relative;
+        font-size: 15pt;
+           
     }
+
+        #status{
+            padding: 10px;
+        }
 
 .data-col{
     flex: 3;
@@ -39,12 +53,14 @@ body>div{
 .data-head{
     display: flex;
     
+    
 }
 
     .data-head>div{
         border: 1px solid white;
         flex: 1;
         height: 5vh;
+        font-size: 10pt;
     }
 
     
@@ -58,3 +74,10 @@ body>div{
     .data{
         border: 1px solid white;
     }
+
+.book-group{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
